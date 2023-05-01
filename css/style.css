@@ -6,19 +6,39 @@
     box-sizing: border-box;
 }
 
+.div {
+    display: inline-block;
+}
+
 .secmain {
     background: url('../images/itachi.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    overflow: hidden;
+    background-position: center;
     color: white;
+    transition: 3s;
+}
+
+.secmain:hover {
+    background-position: 0 0;
+    background: url('../images/itachi\ -\ Copy.jpg');
+    background-size: cover;
+    transition: 3s;
+    background-attachment: fixed;
+
 }
 
 .btn1 {
     color: white;
-    border: none;
-    border-radius: 4px;
+    border: 1.4px solid white;
+    border-radius: 6px;
+}
+
+.btn1:hover {
+    background-color: #e8766b;
+    transition: 0.7s;
+
 }
 
 .divS {
@@ -29,9 +49,15 @@
 
 /***Section Main classes***/
 .divalpha {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
+}
+
+.divalpha:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 1s;
+
 }
 
 .divcontent {
@@ -58,11 +84,16 @@
     margin-top: 6px;
     background: hsl(210deg 52.83% 58.43%);
     padding: 14px 58px;
+    border: none;
 }
 
 /***Section Main classes***/
 
 /***Section Services classes***/
+.services {
+    opacity: 0.7;
+}
+
 .divS {
     display: inline-block;
     width: 22%;
@@ -71,7 +102,9 @@
     padding-top: 4.5rem;
     margin-left: 3rem;
     padding-bottom: 4.5rem;
+
 }
+
 .divs1 {
     margin-left: 11rem;
 }
@@ -80,6 +113,7 @@
     text-align: center;
     padding-bottom: 1rem;
     font-size: 17.5px;
+    color: black;
 }
 
 .paraS {
@@ -93,13 +127,23 @@
     border: 1px solid #88848466;
     color: #e8766b;
     font-size: 31px;
+    transition: 1s;
+}
 
+.icon:hover {
+    background-color: #e8766b;
+    color: white;
+    transform: rotate3d(0, 1, 0, 180deg);
+    transition: 0.8s;
 }
 
 .ieye {
     padding: 33px 33px;
 }
 
+.imobile {
+    padding: 31px 36px
+}
 
 /***Section Services classes***/
 /**sec-interest**/
@@ -110,8 +154,13 @@
 
 .h2int {
     position: relative;
-    top: 1.8rem;
     color: white;
+    left: 6rem;
+    font-size: 20px;
+    font-weight: lighter;
+    width: 28%;
+    top: 1.5rem;
+
 }
 
 .divint {
@@ -120,12 +169,226 @@
 }
 
 .btnint {
+
     background: none;
-    padding: 15px 22px;
-    border: 1.4px solid white;
+    padding: 13px 20px;
     position: relative;
-    bottom: 0.2rem;
-    left: 48rem;
+    bottom: 0.7rem;
+    left: 52rem;
+}
+
+.btnint:hover {
+    color: #e8766b;
+    background-color: white;
 }
 
 /**sec-interest**/
+
+/**sec-About**/
+.sec-about {
+    width: 100%;
+    background-color: hsl(210.27deg 52.61% 58.63%);
+    ;
+    padding: 1.2rem;
+    position: relative;
+}
+
+.div-about-img {
+    margin-left: 8rem;
+    width: 34%;
+    display: inline-block;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    bottom: 1rem;
+    margin-right: 2rem;
+}
+
+.div-about {
+    position: relative;
+    width: 37%;
+    display: inline-block;
+    top: 56px;
+    color: white;
+    padding-bottom: 8rem;
+
+}
+
+.h2-about {
+    font-weight: 500;
+    font-size: 23px;
+
+}
+
+.para-about {
+    font-size: smaller;
+    line-height: 21px;
+}
+
+.img-lap {
+    height: 17rem;
+    width: 100%;
+    position: relative;
+    top: 0rem;
+}
+
+.img-lap:hover {
+    transition: 2.5s;
+    top: 6rem;
+}
+
+/**sec-About**/
+
+/*****Section subs******/
+.div-subs-container {
+    padding-top: 5rem;
+    position: relative;
+    width: 80%;
+    left: 10%;
+    padding-bottom: 5rem;
+}
+
+.tableg {
+    line-height: 61px;
+    text-align: center;
+    border: 1px solid #eeeeee59;
+    color: #858484;
+}
+
+.tableg:hover {
+    z-index: 999;
+    position: relative;
+    box-shadow: 4px 4px 42px #e8766b;
+    transition: 2s;
+}
+
+th {
+    background-color: #e1e1e1;
+    font-weight: lighter;
+    font-size: 1.1rem;
+}
+
+.lg-bg {
+    background-color: #eeeeee;
+}
+
+.currency {
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: #e8766b;
+    background-color: #eeeeee;
+}
+
+.btn-sub-s {
+    padding: 14px 47px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: #e8766b;
+    transition: 0.8s;
+    border: 1px solid white;
+}
+
+.btn-sub-s:hover {
+    color: #e8766b;
+    background: white;
+    border: 1px solid #e8766b;
+    transition: 0.8s;
+}
+
+.td-sub-btn {
+    padding: 1rem;
+}
+
+tfoot:hover {
+    background-color: #e8766b;
+    transition: 1s;
+}
+
+/*****Section subs******/
+
+/*****Section sign up******/
+.sec-signup {
+    color: black;
+    background: url('../images/itachi.jpg');
+    background-size: cover;
+}
+
+.sec-signup:hover {
+    background: url('../images/itachi\ -\ Copy.jpg');
+    transition: 3s;
+    background-size: cover;
+    background-position: center;
+}
+
+.div-signup {
+    position: relative;
+    text-align: center;
+    padding: 4rem;
+    color: white;
+}
+
+.h2-signup {
+    font-size: 24px;
+    font-weight: lighter;
+    word-spacing: 2px;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.signinput {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 92px;
+    margin-right: 1.2rem;
+}
+
+.btnsign {
+    background: #5d95cd;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+/*****Section sign up******/
+
+/*****Section footer******/
+.sec-footer {
+    width: 100%;
+    background-color: #e8766b;
+    padding: 2.5rem;
+    color: white;
+}
+
+.div-footer {
+    display: inline-block;
+}
+
+.div-footer-icon {
+    display: inline-block;
+    position: relative;
+    left: 43rem;
+}
+
+.icon-footer {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 9px;
+    font-size: 12px;
+}
+
+.p-footer {
+    position: relative;
+    left: 6rem;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+
+/*****Section footer******/
