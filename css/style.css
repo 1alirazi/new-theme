@@ -4,6 +4,8 @@
     padding: 0px;
     font-family: sans-serif;
     box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 .div {
@@ -47,6 +49,38 @@
 
 /***Universal Classes****/
 
+/***Section navbar***/
+.sec-nav {
+    position: fixed;
+    background-color: #e8766b;
+    width: 100vw;
+    z-index: 2;
+}
+
+.ul-nav {}
+
+.li-nav {
+    word-spacing: 8px;
+    display: inline-block;
+    padding: 1.5rem 0.8rem;
+
+}
+
+.a-nav {
+    color: white;
+    font-size: large;
+}
+/**Psuedo classes**/
+.li-nav:hover{
+    background-color: #5d95cd;
+    transition: 0.8s;
+}
+.li-nav:visited{
+    background-color: #9E9E9E;
+}
+/**Psuedo classes**/
+/***Section navbar***/
+
 /***Section Main classes***/
 .divalpha {
     background-color: rgba(0, 0, 0, 0.6);
@@ -61,7 +95,7 @@
 }
 
 .divcontent {
-    padding: 161.5px 90px 238px 171px;
+    padding: 215.5px 90px 183px 170px;
     width: 57%;
 }
 
